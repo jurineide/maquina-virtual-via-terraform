@@ -1,0 +1,9 @@
+#para excecutar o playbook, use o comando: ansible-playbook -i hosts.yml playbook.yml
+- hosts: terraform-ansible  
+  tasks:
+    - name: criando o arquivo index.html
+      copy:
+        content: "Hello, World!"
+        dest: /home/ubuntu/index.html  
+    - name: criando o servidor
+      shell: "nohup busybox httpd -f -p 8080 &"
