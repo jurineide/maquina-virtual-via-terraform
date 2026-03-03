@@ -1,0 +1,36 @@
+# Arquivo .gitignore para este repositório
+# Ignorar diretórios e arquivos gerados pelo Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.backup
+*.tfvars
+override.tf
+override.tf.json
+crash.log
+crash.*.log
+.terraform.lock.hcl
+
+# Chaves privadas e arquivos sensíveis
+*.pem
+*.key
+.env
+
+# Editor / IDE
+.vscode/
+.idea/
+*.iml
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs e temporários
+*.log
+*.tmp
+*.swp
+
+# Outros
+# Arquivos de backup do editor
+*~
