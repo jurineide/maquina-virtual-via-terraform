@@ -17,6 +17,7 @@ provider "aws" {
 resource "aws_instance" "app_server" {
     ami = "ami-0786adace1541ca80"
     instance_type = "t3.micro"
+    key_name = "par-de-chaves"
 
     tags = {
         Name = "testeDeployViaTerraform"
